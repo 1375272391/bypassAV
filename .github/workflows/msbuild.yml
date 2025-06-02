@@ -47,7 +47,7 @@ jobs:
       run: msbuild ${{env.SOLUTION_FILE_PATH}} -t:rebuild -verbosity:diag -property:Configuration=Release
 
     - name: upload artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: bypassAV-Release.exe 
         path: D:\a\bypassAV\bypassAV\x64\Release\bypassAV.exe 
